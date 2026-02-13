@@ -1,0 +1,19 @@
+{
+  "name": "linkhub",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "sam:build": "npm run build && sam build",
+    "sam:deploy": "npm run build && sam deploy --guided"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.600.0",
+    "@aws-sdk/util-dynamodb": "^3.600.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.150",
+    "@types/node": "^25.2.3",
+    "typescript": "^5.5.4"
+  }
+}

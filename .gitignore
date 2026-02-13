@@ -1,0 +1,4 @@
+dist
+.aws-sam
+.idea
+node_modules
